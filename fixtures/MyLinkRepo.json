@@ -1,0 +1,13 @@
+{
+    "LandingPage": {
+        "NameInput": "dnn_dnnLogin_username",
+        "PwdInput": "password1dnnLogin",
+        "LoginButton": "Login"
+    },
+
+    "AccountViewPage": {
+        "PageHeading": "Account Overview",
+        "MenuItemBilling": "Billing"
+    }
+
+}

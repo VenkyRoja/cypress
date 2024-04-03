@@ -8,6 +8,9 @@ var sLog = false
 var sReport = false
 var myPage
 var myApp
+var baseLocation
+var txtLocation
+var htmlLocation
 
 //------------------------- 1--------------------------------------
 function printAccessibilityViolations(violations) {
@@ -30,7 +33,7 @@ function printAccessibilityViolations(violations) {
 
     }))
 
-    cy.task('table', vio).then(val => {if(!sLog) cy.writeFile( fName + ".txt", val + "\n" + myApp + "\n" + myPage)})
+    cy.task('table', vio).then(val => {if(!sLog) cy.writeFile( baseLocation + "/" + txtLocation + "/" + fName + ".txt", val + "\n" + myApp + "\n" + myPage)})
 
     if(!sReport)
         createHtmlReport({results:{violations:violations}})
@@ -41,13 +44,16 @@ Cypress.Commands.add('checkAccessbility',
 {
     prevSubject: 'optional'
 },
-(subject, name, theApp, page, skipLog = false, skipReport = false, {skipFailures = false} = {}) =>{
+(subject, bLocation, hLocation, tLocation, theApp, page, skipLog = false, skipReport = false, {skipFailures = false} = {}) =>{
 
         myApp = theApp
         myPage = page 
-        fName = name
+        fName = page
         sReport = skipReport
         sLog = skipLog
+        baseLocation = bLocation
+        htmlLocation = hLocation
+        txtLocation = tLocation
 
         cy.task('log', "Page is " + page + " |" + myPage)   
         cy.injectAxe() 
@@ -98,7 +104,7 @@ function createHtmlReport({ results }) {
                 hasAxeRawResults: Boolean(results?.timestamp),
                 rules: prepareAxeRules(results?.toolOptions?.rules || {}),
             });
-            cy.writeFile(fName + ".html", htmlContent)
+            cy.writeFile(baseLocation + "/" + htmlLocation + "/" + fName + ".html", htmlContent)
         })
 
         return htmlContent;

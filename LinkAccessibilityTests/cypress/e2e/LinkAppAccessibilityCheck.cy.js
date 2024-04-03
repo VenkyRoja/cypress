@@ -22,7 +22,7 @@ describe('Link Application Accessbility Check', () =>  {
     cy.get(`[id=${this.repo.LandingPage.PwdInput}]`).type(this.c.PassCode)
     cy.get("button").contains(this.repo.LandingPage.LoginButton).click()
 
-    cy.checkAccessbility("AccessibilityReports/" + this.c.Pages.P1, this.c.MyApp, this.c.Pages.P1)
+    cy.checkAccessbility(this.c.Reports.myBase, this.c.Reports.myHTML, this.c.Reports.myTXT, this.c.MyApp, this.c.Pages.P1)
                 
   })
   
@@ -36,7 +36,8 @@ describe('Link Application Accessbility Check', () =>  {
    
     cy.get("span").contains(this.repo.AccountViewPage.MenuItemBilling).click()
    
-    cy.checkAccessbility("AccessibilityReports/" + this.c.Pages.P2, this.c.MyApp, this.c.Pages.P2)
+    cy.checkAccessbility(this.c.Reports.myBase, this.c.Reports.myHTML, this.c.Reports.myTXT, this.c.MyApp, this.c.Pages.P2)
+
 
   })
 })

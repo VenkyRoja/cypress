@@ -5,12 +5,12 @@
   "main": "index.js",
 
   "scripts": {
-    "pretest": "rimraf  --glob ./AccessibilityReports/mochawesome/*.*",
+    "pretest": "rimraf  --glob ./MyReports/mochawesome/*.*",
     "test": "npm run cypress-test || npm run posttest",
     "cypress-test": "cypress run --browser chrome",
     "posttest": "npm run merge-reports && npm run generate-html-report",
-    "merge-reports": "mochawesome-merge AccessibilityReports/mochawesome/*.json -o AccessibilityReports/mochawesome/result.json",
-    "generate-html-report": "marge AccessibilityReports/mochawesome/result.json --reportDir ./ --inline",
+    "merge-reports": "mochawesome-merge MyReports/mochawesome/*.json -o MyReports/mochawesome/result.json",
+    "generate-html-report": "marge MyReports/mochawesome/result.json --reportDir ./ --inline",
     "myLink": "npx cypress run --spec cypress/e2e/LinkAppAccessibilityCheck.cy.js --browser chrome  --headless"
   },
   

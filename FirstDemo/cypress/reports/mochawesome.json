@@ -1,0 +1,153 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 1,
+    "pending": 0,
+    "failures": 2,
+    "start": "2024-04-03T03:11:08.652Z",
+    "end": "2024-04-03T03:11:25.070Z",
+    "duration": 16418,
+    "testsRegistered": 3,
+    "passPercent": 33.33333333333333,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bcbe15e6-a684-48d6-882d-a92f7575a7a1",
+      "title": "",
+      "fullFile": "cypress\\e2e\\MyLink\\LinkAppAccessibilityCheck.cy.ts",
+      "file": "cypress\\e2e\\MyLink\\LinkAppAccessibilityCheck.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b8b0fcd2-7700-4ffb-8293-1cb9db4aed76",
+          "title": "Link Application Accessbility Check",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "00 Application information ",
+              "fullTitle": "Link Application Accessbility Check 00 Application information ",
+              "timedOut": null,
+              "duration": 89,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.task('log', \"Application under test = \" + this.c.MyApp);",
+              "err": {},
+              "uuid": "7644030f-32c6-446d-a6a4-7a289d077152",
+              "parentUUID": "b8b0fcd2-7700-4ffb-8293-1cb9db4aed76",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "01 Visit Account Overview Page: Test accessbility ",
+              "fullTitle": "Link Application Accessbility Check 01 Visit Account Overview Page: Test accessbility ",
+              "timedOut": null,
+              "duration": 3344,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(this.c.URL);\ncy.get(\"[id=\".concat(this.repo.LandingPage.NameInput, \"]\")).type(this.c.UserName);\ncy.get(\"[id=\".concat(this.repo.LandingPage.PwdInput, \"]\")).type(this.c.PassCode);\ncy.get(\"button\").contains(this.repo.LandingPage.LoginButton).click();\ncy.checkAccessibility(\"myReport\");",
+              "err": {
+                "message": "Error: No elements found for include in page Context",
+                "estack": "Error: No elements found for include in page Context\n    at new uf (https://linkv4113.infinitycis.com/__cypress/tests?p=cypress\\support\\e2e.ts)\n    at Object.kb [as _runRules] (https://linkv4113.infinitycis.com/__cypress/tests?p=cypress\\support\\e2e.ts)\n    at axe.run (https://linkv4113.infinitycis.com/__cypress/tests?p=cypress\\support\\e2e.ts)",
+                "diff": null
+              },
+              "uuid": "0e164f53-057c-4789-ae48-24ce93e869a1",
+              "parentUUID": "b8b0fcd2-7700-4ffb-8293-1cb9db4aed76",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "02 Visit Billing Page: Test accessbility ",
+              "fullTitle": "Link Application Accessbility Check 02 Visit Billing Page: Test accessbility ",
+              "timedOut": null,
+              "duration": 9288,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(this.c.URL);\ncy.get(\"[id=\".concat(this.repo.LandingPage.NameInput, \"]\")).type(this.c.UserName);\ncy.get(\"[id=\".concat(this.repo.LandingPage.PwdInput, \"]\")).type(this.c.PassCode);\ncy.get(\"button\").contains(this.repo.LandingPage.LoginButton).click();\ncy.get(\"span\").contains(this.repo.AccountViewPage.MenuItemBilling).click();\ncy.checkAccessibility(\"myReport\");",
+              "err": {
+                "message": "Error: No elements found for include in page Context",
+                "estack": "Error: No elements found for include in page Context\n    at new uf (https://linkv4113.infinitycis.com/__cypress/tests?p=cypress\\support\\e2e.ts)\n    at Object.kb [as _runRules] (https://linkv4113.infinitycis.com/__cypress/tests?p=cypress\\support\\e2e.ts)\n    at axe.run (https://linkv4113.infinitycis.com/__cypress/tests?p=cypress\\support\\e2e.ts)",
+                "diff": null
+              },
+              "uuid": "0fefee84-396c-4648-a9a9-b6a73b2f77d2",
+              "parentUUID": "b8b0fcd2-7700-4ffb-8293-1cb9db4aed76",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7644030f-32c6-446d-a6a4-7a289d077152"
+          ],
+          "failures": [
+            "0e164f53-057c-4789-ae48-24ce93e869a1",
+            "0fefee84-396c-4648-a9a9-b6a73b2f77d2"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 12721,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

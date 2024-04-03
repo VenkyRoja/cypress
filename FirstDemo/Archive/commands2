@@ -1,0 +1,59 @@
+
+declare namespace Cypress {
+  interface Chainable<Subject> {
+    checkAccessibility(options?: { skipFailures?: boolean }): Chainable<Subject>;
+  }
+}
+
+
+function printAccessibilityViolations(violations: any[]) {
+  cy.task(
+    'table',
+    violations.map(({ id, impact, description, nodes }) => ({
+      id,
+      impact,
+      //description: `${description} (${id})`,
+      description: `${description}`,
+      count: nodes.length,
+      //nodes: nodes,
+    })),
+  );
+  
+  //---------
+  const fileName = 'cypress-a11y-report.json';
+  cy.writeFile(fileName, JSON.stringify(violations));
+
+  cy.task('generateAxeReport', { fileName }).then(() => {
+    cy.readFile('a11yReport.html').then((html) => {
+      cy.task('log', html);
+    });
+  });
+  //-----------
+}
+
+Cypress.Commands.add('checkAccessibility', { 
+  prevSubject: 'optional',
+}, (subject: any, { skipFailures = false } = {}) => {
+
+  cy.injectAxe()
+
+  cy.checkA11y(subject, {
+    runOnly: {
+      type: 'tag',
+      values: ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa', 'best-practice']
+      //values: ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']
+    }
+  //}, printAccessibilityViolations, true);
+  }, printAccessibilityViolations, skipFailures);
+
+  
+
+ 
+//----------z
+
+//----------z
+
+
+
+});
+

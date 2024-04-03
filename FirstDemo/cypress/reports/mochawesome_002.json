@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-04-03T03:11:31.878Z",
+    "end": "2024-04-03T03:11:38.446Z",
+    "duration": 6568,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4bc815cc-ad93-4ca6-beaf-fcf87bfd3508",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Tutorial\\10_implicit_assertions_demo.cy.ts",
+      "file": "cypress\\e2e\\Tutorial\\10_implicit_assertions_demo.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "22bc22db-09bb-41da-9b3f-dac567761a64",
+          "title": "Cypress implicit assertions - demo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should understand implicit assertions of cypress",
+              "fullTitle": "Cypress implicit assertions - demo should understand implicit assertions of cypress",
+              "timedOut": null,
+              "duration": 3334,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.letskodeit.com/practice');\ncy.get('#product')\n    .should('have.class', 'table-display')\n    .and('be.visible')\n    .find('tbody tr:nth-child(2)')\n    .find('td')\n    .last()\n    .should('contain', '35')\n    .and('have.text', '35')\n    .and('have.class', 'price');",
+              "err": {},
+              "uuid": "d000a50e-7939-4de8-a339-482ff629829b",
+              "parentUUID": "22bc22db-09bb-41da-9b3f-dac567761a64",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d000a50e-7939-4de8-a339-482ff629829b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3334,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

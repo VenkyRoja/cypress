@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-04-03T03:11:27.845Z",
+    "end": "2024-04-03T03:11:29.217Z",
+    "duration": 1372,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b6a9a782-1144-4e37-ba7d-4e920961c0e7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Mywork\\reader.cy.ts",
+      "file": "cypress\\e2e\\Mywork\\reader.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d0aa742b-126c-4e20-9671-fed7240a3cbd",
+          "title": "Reading an html file ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should table entries in an html page",
+              "fullTitle": "Reading an html file  should table entries in an html page",
+              "timedOut": null,
+              "duration": 1244,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('Report_1a/index4.html'); // C:\\MyCypress\\cypress\\Mywork\\Report_1a\ncy.get(prefixC + '\"3\"' + suffixC).then(function ($value) { Head1 = $value.text(); });\ncy.get(prefixC + '\"6\"' + suffixC).then(function ($value) { Head2 = $value.text(); });\ncy.get(prefixC + '\"1\"' + suffixC).then(function ($value) { Head3 = $value.text(); });\ncy.get(prefixC + '\"2\"' + suffixC).then(function ($value) { Head4 = $value.text(); });\ncy.get(prefixB + '\"1\"' + suffixB).then(function ($value) { HSamples = $value.text(); });\ncy.get(prefixB + '\"2\"' + suffixB).then(function ($value) { Hko = $value.text(); });\ncy.get(prefixB + '\"9\"' + suffixB).then(function ($value) { Hpct99 = $value.text(); });\ncy.get(prefixB + '\"10\"' + suffixB).then(function ($value) { Htxn = $value.text(); });\ncy.get(prefixB + '\"11\"' + suffixB).then(function ($value) { Hrcd = $value.text(); });\ncy.get(prefixB + '\"12\"' + suffixB).then(function ($value) { Hsent = $value.text(); });\ncy.get(prefixA + \"2\" + suffixA).then(function ($value) { samples = $value.text(); });\ncy.get(prefixA + \"3\" + suffixA).then(function ($value) { ko = $value.text(); });\ncy.get(prefixA + \"10\" + suffixA).then(function ($value) { pct99 = $value.text(); });\ncy.get(prefixA + \"11\" + suffixA).then(function ($value) { txn = $value.text(); });\ncy.get(prefixA + \"12\" + suffixA).then(function ($value) { rcd = $value.text(); });\ncy.get(prefixA + \"13\" + suffixA).then(function ($value) { sent = $value.text(); });",
+              "err": {},
+              "uuid": "3518ebc0-fb7f-450a-aca3-b325bd5621c6",
+              "parentUUID": "d0aa742b-126c-4e20-9671-fed7240a3cbd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "print",
+              "fullTitle": "Reading an html file  print",
+              "timedOut": null,
+              "duration": 59,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.task('log', Head1 + \" : \" + HSamples + ' = ' + samples);\ncy.task('log', Head1 + \" : \" + Hko + ' = ' + ko);\ncy.task('log', Head2 + \" : \" + Hpct99 + ' = ' + pct99);\ncy.task('log', Head3 + \" : \" + Htxn + ' = ' + txn);\ncy.task('log', Head4 + \" : \" + Hrcd + ' = ' + rcd);\ncy.task('log', Head4 + \" : \" + Hsent + ' = ' + sent);\ncy.log(Head1 + \" : \" + HSamples + ' = ' + samples);",
+              "err": {},
+              "uuid": "42b54650-bc59-494c-ac4f-e97c6e03dedc",
+              "parentUUID": "d0aa742b-126c-4e20-9671-fed7240a3cbd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3518ebc0-fb7f-450a-aca3-b325bd5621c6",
+            "42b54650-bc59-494c-ac4f-e97c6e03dedc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1303,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

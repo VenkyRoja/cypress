@@ -1,0 +1,218 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 4,
+    "passes": 0,
+    "pending": 0,
+    "failures": 4,
+    "testsRegistered": 4,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2024-04-03T20:55:05.802Z",
+    "end": "2024-04-03T20:55:32.574Z",
+    "duration": 26772
+  },
+  "results": [
+    {
+      "uuid": "43d887e4-8d4a-4e2c-9868-baa06473f624",
+      "title": "",
+      "fullFile": "cypress\\e2e\\LinkAppAccessibilityCheck.cy.js",
+      "file": "cypress\\e2e\\LinkAppAccessibilityCheck.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "60d7560f-10ea-4904-b6dd-20e06ad265c2",
+          "title": "Link Application Accessbility Check",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "01 Visit Account Overview Page: Test accessbility ",
+              "fullTitle": "Link Application Accessbility Check 01 Visit Account Overview Page: Test accessbility ",
+              "timedOut": null,
+              "duration": 12457,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(this.c.URL);\ncy.get(`[id=${this.repo.LandingPage.NameInput}]`).type(this.c.UserName);\ncy.get(`[id=${this.repo.LandingPage.PwdInput}]`).type(this.c.PassCode);\ncy.get(\"button\").contains(this.repo.LandingPage.LoginButton).click();\ncy.checkAccessbility(\"AccessibilityReports/\" + this.c.Pages.P1, this.c.MyApp, this.c.Pages.P1);",
+              "err": {
+                "message": "AssertionError: 3 accessibility violations were detected: expected 3 to equal 0",
+                "estack": "AssertionError: 3 accessibility violations were detected: expected 3 to equal 0\n    at Context.eval (webpack://cypressdemo/./node_modules/cypress-axe/dist/index.js:100:0)",
+                "diff": null
+              },
+              "uuid": "0d72ab6c-acb9-4ded-b2f4-bf37d53957f8",
+              "parentUUID": "60d7560f-10ea-4904-b6dd-20e06ad265c2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "02 Visit Billing Page: Test accessbility ",
+              "fullTitle": "Link Application Accessbility Check 02 Visit Billing Page: Test accessbility ",
+              "timedOut": null,
+              "duration": 10743,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(this.c.URL);\ncy.get(`[id=${this.repo.LandingPage.NameInput}]`).type(this.c.UserName);\ncy.get(`[id=${this.repo.LandingPage.PwdInput}]`).type(this.c.PassCode);\ncy.get(\"button\").contains(this.repo.LandingPage.LoginButton).click();\ncy.get(\"span\").contains(this.repo.AccountViewPage.MenuItemBilling).click();\ncy.checkAccessbility(\"AccessibilityReports/\" + this.c.Pages.P2, this.c.MyApp, this.c.Pages.P2);",
+              "err": {
+                "message": "AssertionError: 5 accessibility violations were detected: expected 5 to equal 0",
+                "estack": "AssertionError: 5 accessibility violations were detected: expected 5 to equal 0\n    at Context.eval (webpack://cypressdemo/./node_modules/cypress-axe/dist/index.js:100:0)",
+                "diff": null
+              },
+              "uuid": "c54a4ee4-e33e-46ad-b599-98560e6c6bd7",
+              "parentUUID": "60d7560f-10ea-4904-b6dd-20e06ad265c2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "0d72ab6c-acb9-4ded-b2f4-bf37d53957f8",
+            "c54a4ee4-e33e-46ad-b599-98560e6c6bd7"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 23200,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "43d887e4-8d4a-4e2c-9868-baa06473f624",
+      "title": "",
+      "fullFile": "cypress\\e2e\\LinkAppAccessibilityCheck.cy.js",
+      "file": "cypress\\e2e\\LinkAppAccessibilityCheck.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "60d7560f-10ea-4904-b6dd-20e06ad265c2",
+          "title": "Link Application Accessbility Check",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "01 Visit Account Overview Page: Test accessbility ",
+              "fullTitle": "Link Application Accessbility Check 01 Visit Account Overview Page: Test accessbility ",
+              "timedOut": null,
+              "duration": 12457,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(this.c.URL);\ncy.get(`[id=${this.repo.LandingPage.NameInput}]`).type(this.c.UserName);\ncy.get(`[id=${this.repo.LandingPage.PwdInput}]`).type(this.c.PassCode);\ncy.get(\"button\").contains(this.repo.LandingPage.LoginButton).click();\ncy.checkAccessbility(\"AccessibilityReports/\" + this.c.Pages.P1, this.c.MyApp, this.c.Pages.P1);",
+              "err": {
+                "message": "AssertionError: 3 accessibility violations were detected: expected 3 to equal 0",
+                "estack": "AssertionError: 3 accessibility violations were detected: expected 3 to equal 0\n    at Context.eval (webpack://cypressdemo/./node_modules/cypress-axe/dist/index.js:100:0)",
+                "diff": null
+              },
+              "uuid": "0d72ab6c-acb9-4ded-b2f4-bf37d53957f8",
+              "parentUUID": "60d7560f-10ea-4904-b6dd-20e06ad265c2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "02 Visit Billing Page: Test accessbility ",
+              "fullTitle": "Link Application Accessbility Check 02 Visit Billing Page: Test accessbility ",
+              "timedOut": null,
+              "duration": 10743,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(this.c.URL);\ncy.get(`[id=${this.repo.LandingPage.NameInput}]`).type(this.c.UserName);\ncy.get(`[id=${this.repo.LandingPage.PwdInput}]`).type(this.c.PassCode);\ncy.get(\"button\").contains(this.repo.LandingPage.LoginButton).click();\ncy.get(\"span\").contains(this.repo.AccountViewPage.MenuItemBilling).click();\ncy.checkAccessbility(\"AccessibilityReports/\" + this.c.Pages.P2, this.c.MyApp, this.c.Pages.P2);",
+              "err": {
+                "message": "AssertionError: 5 accessibility violations were detected: expected 5 to equal 0",
+                "estack": "AssertionError: 5 accessibility violations were detected: expected 5 to equal 0\n    at Context.eval (webpack://cypressdemo/./node_modules/cypress-axe/dist/index.js:100:0)",
+                "diff": null
+              },
+              "uuid": "c54a4ee4-e33e-46ad-b599-98560e6c6bd7",
+              "parentUUID": "60d7560f-10ea-4904-b6dd-20e06ad265c2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "0d72ab6c-acb9-4ded-b2f4-bf37d53957f8",
+            "c54a4ee4-e33e-46ad-b599-98560e6c6bd7"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 23200,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "AccessibilityReports/mochawesome"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

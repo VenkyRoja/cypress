@@ -1,0 +1,19 @@
+{
+  "name": "cypressdemo",
+  "version": "1.0.0",
+  "description": "Matt testing Cypress and Cypress-Axe",
+  "main": "index.js",
+  "scripts": {
+    "test": "Matttest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/mustache": "^4.2.5",
+    "axe-core": "^4.8.4",
+    "cypress": "^13.6.6",
+    "cypress-axe": "^1.5.0",
+    "mustache": "^4.2.0",
+    "typescript": "^5.3.3"
+  }
+}

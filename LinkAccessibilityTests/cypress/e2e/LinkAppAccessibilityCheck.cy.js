@@ -33,5 +33,13 @@ describe('Link Application Accessbility Check', () =>  {
     cy.get("span").contains(this.repo.AccountViewPage.MenuItemAlertSub).click()
     cy.checkAccessbility(this.c.Reports.myBase, this.c.Reports.myHTML, this.c.Reports.myTXT, this.c.MyApp, this.c.Pages.P3)
   })
+
+   //------------------Auto Pay Page---------------------------------------
+   it("04 Auto Pay Page: Test accessbility ", function()  {
+    cy.Link_login()
+    cy.get("span").contains(this.repo.AccountViewPage.MenuItemAutoPay).click()
+    cy.checkAccessbility(this.c.Reports.myBase, this.c.Reports.myHTML, this.c.Reports.myTXT, this.c.MyApp, this.c.Pages.P4)
+  }) 
+
   //---------------------------------------------------------------------
 })

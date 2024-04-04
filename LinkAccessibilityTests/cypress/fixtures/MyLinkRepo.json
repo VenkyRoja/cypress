@@ -8,7 +8,8 @@
     "AccountViewPage": {
         "PageHeading": "Account Overview",
         "MenuItemBilling": "Billing",
-        "MenuItemAlertSub": "Alert Subscription"
+        "MenuItemAlertSub": "Alert Subscription",
+        "MenuItemAutoPay": "Auto Pay"
     }
 
 }

@@ -33,7 +33,7 @@ function printAccessibilityViolations(violations) {
 
     }))
 
-    cy.task('table', vio).then(val => {if(!sLog) cy.writeFile( baseLocation + "/" + txtLocation + "/" + fName + ".txt", val + "\n" + myApp + "\n" + myPage)})
+    cy.task('table', vio).then(val => {if(!sLog) cy.writeFile( baseLocation + "/" + txtLocation + "/" + fName + ".txt",  myApp + "\n" + myPage + " Page\n" + val)})
 
     if(!sReport)
         createHtmlReport({results:{violations:violations}})

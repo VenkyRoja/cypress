@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "cypress.config.js",
   "scripts": {
+    "pretest": "rimraf  --glob ./MyReports/mochawesome/*.*",
     "test": "cypress run --browser firefox"
   },
   "author": "",
@@ -18,5 +19,8 @@
     "mochawesome-report-generator": "^6.2.0",
     "mustache": "^4.2.0",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "rimraf": "^5.0.5"
   }
 }

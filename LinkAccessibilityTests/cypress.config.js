@@ -6,6 +6,7 @@ var str = ""
 module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
+      require('cypress-mochawesome-reporter/plugin')(on);
       // implement node event listeners here
       on('task', {
         log(message){
@@ -41,13 +42,20 @@ module.exports = defineConfig({
 
   //-----------
   
-  reporter: "mochawesome",
+  reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
     charts: true,
+    reportPageTitle: 'custom-title',
+    embeddedScreenshots: true,
+    saveAllAttempts: false,
+    ignoreVideos: true,
+    videoOnFailOnly: false, 
+    inlineAssets: true,
     overwrite: false,
     html: false,
     json: true,
-    reportDir: 'AccessibilityReports/mochawesome'
+    reportDir: 'MyReports/mochawesome'
+
   }
 
 

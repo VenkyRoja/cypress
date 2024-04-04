@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 2,
-    "start": "2024-04-03T20:55:05.802Z",
-    "end": "2024-04-03T20:55:32.574Z",
-    "duration": 26772,
+    "start": "2024-04-04T15:28:04.721Z",
+    "end": "2024-04-04T15:28:23.679Z",
+    "duration": 18958,
     "testsRegistered": 2,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "43d887e4-8d4a-4e2c-9868-baa06473f624",
+      "uuid": "b0ac9d1b-9e83-4c69-b300-b4814dc53d67",
       "title": "",
       "fullFile": "cypress\\e2e\\LinkAppAccessibilityCheck.cy.js",
       "file": "cypress\\e2e\\LinkAppAccessibilityCheck.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "60d7560f-10ea-4904-b6dd-20e06ad265c2",
+          "uuid": "4418b0f0-e8d3-4b0d-9e5b-4f7da046036d",
           "title": "Link Application Accessbility Check",
           "fullFile": "",
           "file": "",
@@ -38,21 +38,21 @@
               "title": "01 Visit Account Overview Page: Test accessbility ",
               "fullTitle": "Link Application Accessbility Check 01 Visit Account Overview Page: Test accessbility ",
               "timedOut": null,
-              "duration": 12457,
+              "duration": 3696,
               "state": "failed",
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
               "context": null,
-              "code": "cy.visit(this.c.URL);\ncy.get(`[id=${this.repo.LandingPage.NameInput}]`).type(this.c.UserName);\ncy.get(`[id=${this.repo.LandingPage.PwdInput}]`).type(this.c.PassCode);\ncy.get(\"button\").contains(this.repo.LandingPage.LoginButton).click();\ncy.checkAccessbility(\"AccessibilityReports/\" + this.c.Pages.P1, this.c.MyApp, this.c.Pages.P1);",
+              "code": "cy.visit(this.c.URL);\ncy.get(`[id=${this.repo.LandingPage.NameInput}]`).type(this.c.UserName);\ncy.get(`[id=${this.repo.LandingPage.PwdInput}]`).type(this.c.PassCode);\ncy.get(\"button\").contains(this.repo.LandingPage.LoginButton).click();\ncy.checkAccessbility(this.c.Reports.myBase, this.c.Reports.myHTML, this.c.Reports.myTXT, this.c.MyApp, this.c.Pages.P1);",
               "err": {
                 "message": "AssertionError: 3 accessibility violations were detected: expected 3 to equal 0",
-                "estack": "AssertionError: 3 accessibility violations were detected: expected 3 to equal 0\n    at Context.eval (webpack://cypressdemo/./node_modules/cypress-axe/dist/index.js:100:0)",
+                "estack": "AssertionError: 3 accessibility violations were detected: expected 3 to equal 0\n    at checkA11y (webpack://mycypress/./node_modules/cypress-axe/dist/index.js:100:0)\n    at getRet (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:118329:20)\n    at tryCatcher (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:1807:23)\n    at __webpack_modules__</module.exports/Promise.try (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:4315:29)\n    at thenFn (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:118340:60)\n    at then (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:118591:21)\n    at wrapped (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:138292:19)\n    at __webpack_modules__</runCommand (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:144187:15)\n    at tryCatcher (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:1807:23)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:1519:31)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromise (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:1576:18)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromiseCtx (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:1613:10)\n    at _drainQueueStep (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:2411:12)\n    at _drainQueue (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:2400:24)\n    at __webpack_modules__</Async.prototype._drainQueues (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:2416:16)\n    at __webpack_modules__</Async/this.drainQueues (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:2286:14)",
                 "diff": null
               },
-              "uuid": "0d72ab6c-acb9-4ded-b2f4-bf37d53957f8",
-              "parentUUID": "60d7560f-10ea-4904-b6dd-20e06ad265c2",
+              "uuid": "102783d4-a411-429e-9b5b-0e7b3eb2726a",
+              "parentUUID": "4418b0f0-e8d3-4b0d-9e5b-4f7da046036d",
               "isHook": false,
               "skipped": false
             },
@@ -60,21 +60,21 @@
               "title": "02 Visit Billing Page: Test accessbility ",
               "fullTitle": "Link Application Accessbility Check 02 Visit Billing Page: Test accessbility ",
               "timedOut": null,
-              "duration": 10743,
+              "duration": 5967,
               "state": "failed",
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
               "context": null,
-              "code": "cy.visit(this.c.URL);\ncy.get(`[id=${this.repo.LandingPage.NameInput}]`).type(this.c.UserName);\ncy.get(`[id=${this.repo.LandingPage.PwdInput}]`).type(this.c.PassCode);\ncy.get(\"button\").contains(this.repo.LandingPage.LoginButton).click();\ncy.get(\"span\").contains(this.repo.AccountViewPage.MenuItemBilling).click();\ncy.checkAccessbility(\"AccessibilityReports/\" + this.c.Pages.P2, this.c.MyApp, this.c.Pages.P2);",
+              "code": "cy.visit(this.c.URL);\ncy.get(`[id=${this.repo.LandingPage.NameInput}]`).type(this.c.UserName);\ncy.get(`[id=${this.repo.LandingPage.PwdInput}]`).type(this.c.PassCode);\ncy.get(\"button\").contains(this.repo.LandingPage.LoginButton).click();\ncy.get(\"span\").contains(this.repo.AccountViewPage.MenuItemBilling).click();\ncy.checkAccessbility(this.c.Reports.myBase, this.c.Reports.myHTML, this.c.Reports.myTXT, this.c.MyApp, this.c.Pages.P2);",
               "err": {
-                "message": "AssertionError: 5 accessibility violations were detected: expected 5 to equal 0",
-                "estack": "AssertionError: 5 accessibility violations were detected: expected 5 to equal 0\n    at Context.eval (webpack://cypressdemo/./node_modules/cypress-axe/dist/index.js:100:0)",
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Billing' within the element: <span.sr-only> but never did.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Billing' within the element: <span.sr-only> but never did.\n    at  (webpack://mycypress/./cypress/e2e/LinkAppAccessibilityCheck.cy.js:37:19)\n    at __webpack_modules__</setRunnable/runnable.fn (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:138559:43)\n    at callFn (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:157151:21)\n    at __webpack_modules__</Runnable.prototype.run (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:157138:13)\n    at __webpack_modules__</create/onRunnableRun (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:163062:30)\n    at finallyHandler (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:4072:23)\n    at tryCatcher (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:1807:23)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:1519:31)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromise (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:1576:18)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromise0 (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:1621:10)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromises (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:1701:18)\n    at _drainQueueStep (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:2400:24)\n    at __webpack_modules__</Async.prototype._drainQueues (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:2416:16)\n    at __webpack_modules__</Async/this.drainQueues (https://linkv4113.infinitycis.com/__cypress/runner/cypress_runner.js:2286:14)",
                 "diff": null
               },
-              "uuid": "c54a4ee4-e33e-46ad-b599-98560e6c6bd7",
-              "parentUUID": "60d7560f-10ea-4904-b6dd-20e06ad265c2",
+              "uuid": "01fa312c-d49d-495f-82b6-6c42f0d29123",
+              "parentUUID": "4418b0f0-e8d3-4b0d-9e5b-4f7da046036d",
               "isHook": false,
               "skipped": false
             }
@@ -82,12 +82,12 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "0d72ab6c-acb9-4ded-b2f4-bf37d53957f8",
-            "c54a4ee4-e33e-46ad-b599-98560e6c6bd7"
+            "102783d4-a411-429e-9b5b-0e7b3eb2726a",
+            "01fa312c-d49d-495f-82b6-6c42f0d29123"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 23200,
+          "duration": 9663,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -122,10 +122,16 @@
     "marge": {
       "options": {
         "charts": true,
+        "reportPageTitle": "custom-title",
+        "embeddedScreenshots": true,
+        "saveAllAttempts": false,
+        "ignoreVideos": true,
+        "videoOnFailOnly": false,
+        "inlineAssets": true,
         "overwrite": false,
         "html": false,
         "json": true,
-        "reportDir": "AccessibilityReports/mochawesome"
+        "reportDir": "MyReports/mochawesome"
       },
       "version": "6.2.0"
     }

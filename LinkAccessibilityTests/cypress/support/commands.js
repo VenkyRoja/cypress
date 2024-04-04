@@ -12,6 +12,7 @@ var baseLocation
 var txtLocation
 var htmlLocation
 
+
 //------------------------- 1--------------------------------------
 function printAccessibilityViolations(violations) {
 
@@ -113,3 +114,18 @@ function createHtmlReport({ results }) {
         return `Failed to create HTML report due to an error ${e.message}`;
     }
 }
+
+//------------------------- 4--------------------------------------
+Cypress.Commands.add('Link_login', () => {
+
+    cy.fixture('MyLinkCredentials').then(function (c) {
+        this.c = c
+        cy.visit(this.c.URL)
+        cy.get(`[id=${this.repo.LandingPage.NameInput}]`).type(this.c.UserName)
+        cy.get(`[id=${this.repo.LandingPage.PwdInput}]`).type(this.c.PassCode)
+        cy.get("button").contains(this.repo.LandingPage.LoginButton).click()
+    })
+    
+})
+
+ 

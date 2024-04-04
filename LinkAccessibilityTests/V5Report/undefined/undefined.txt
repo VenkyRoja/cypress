@@ -1,9 +1,0 @@
-Fix any of the following:
-  Element has insufficient color contrast of 2.56 (foreground color: #81cbf4, background color: #0078d0, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1Fix any of the following:
-  Element does not have text that is visible to screen readersFix any of the following:
-  user-scalable=no on <meta> tag disables zooming on mobile devicesFix all of the following:
-  Page must have a level-one headingFix any of the following:
-  Some page content is not contained by landmarksFix any of the following:
-  Element has a tabindex greater than 0
-undefined
-undefined

@@ -54,8 +54,7 @@ Cypress.Commands.add('checkAccessbility',
         baseLocation = bLocation
         htmlLocation = hLocation
         txtLocation = tLocation
-
-        cy.task('log', "Page is " + page + " |" + myPage)   
+  
         cy.injectAxe() 
         cy.checkA11y(subject, {
             runOnly: {

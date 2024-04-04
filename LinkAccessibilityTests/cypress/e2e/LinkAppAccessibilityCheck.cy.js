@@ -15,13 +15,13 @@ describe('Link Application Accessbility Check', () =>  {
   
   //-------------------Tests section------------------------------------------ 
   //-------------------Account View Page--------------------------------------- 
-  it('01 Visit Account Overview Page: Test accessbility ', function () {
+  it('01 Account Overview Page: Test accessbility ', function () {
     cy.Link_login()
     cy.checkAccessbility(this.c.Reports.myBase, this.c.Reports.myHTML, this.c.Reports.myTXT, this.c.MyApp, this.c.Pages.P1)
   })
   
   //------------------Billing Page---------------------------------------
-  it("02 Visit Billing Page: Test accessbility ", function()  {
+  it("02 Billing Page: Test accessbility ", function()  {
     cy.Link_login()
     cy.get("span").contains(this.repo.AccountViewPage.MenuItemBilling).click()
     cy.checkAccessbility(this.c.Reports.myBase, this.c.Reports.myHTML, this.c.Reports.myTXT, this.c.MyApp, this.c.Pages.P2)

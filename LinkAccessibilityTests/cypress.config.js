@@ -1,6 +1,7 @@
 const { defineConfig } = require("cypress");
 const { Console } = require('console')
 const { Transform } = require('stream')
+const fs = require('fs')
 
 var str = ""
 module.exports = defineConfig({
@@ -37,6 +38,18 @@ module.exports = defineConfig({
           return str
         }
       })
+
+      on('task', {
+        checkFileExists(filePath) {
+          // Check if the file exists
+          if (fs.existsSync(filePath)) {
+            return true
+          } else {
+            return false
+          }
+        }
+      })
+
     },
   },
 

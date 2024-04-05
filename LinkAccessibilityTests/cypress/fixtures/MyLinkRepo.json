@@ -9,7 +9,16 @@
         "PageHeading": "Account Overview",
         "MenuItemBilling": "Billing",
         "MenuItemAlertSub": "Alert Subscription",
-        "MenuItemAutoPay": "Auto Pay"
+        "MenuItemAutoPay": "Auto Pay",
+        "MenuItemManageAccount": "Manage Account",
+        "MenuItemSSTS": "Stop, start or transfer service"
+    },
+    "ServicesPage": {
+        "NewServiceRbuttonID": "#rdMoveIn",   
+        "TransferServiceRbuttonID": "#rdTransferService",
+        "StopServiceRbuttonID" : "#rdMoveOut",
+        "ContinueButtonID": "#btnTransferServiceSubmit"
+        
     }
 
 }

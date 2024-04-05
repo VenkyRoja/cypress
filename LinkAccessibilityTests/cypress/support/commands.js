@@ -1,4 +1,6 @@
-const { fs } = require('fs')
+//const { fs } = require('fs')
+
+import * as fs from 'fs';
 import mustache from 'mustache';
 import { prepareReportData } from '../util/prepareReportData';
 import { prepareAxeRules } from '../util/prepareAxeRules';
@@ -11,7 +13,7 @@ var myApp
 var baseLocation
 var txtLocation
 var htmlLocation
-
+var sfName  
 
 //------------------------- 1--------------------------------------
 function printAccessibilityViolations(violations) {
@@ -34,7 +36,48 @@ function printAccessibilityViolations(violations) {
 
     }))
 
-    cy.task('table', vio).then(val => {if(!sLog) cy.writeFile( baseLocation + "/" + txtLocation + "/" + fName + ".txt",  myApp + "\n" + myPage + " Page\n" + val)})
+    var summaryFile = baseLocation + "/" + txtLocation + "/" + sfName
+    var logFile = baseLocation + "/" + txtLocation + "/" + fName + ".txt"
+
+    cy.task('table', vio).then(val => {
+        if(!sLog) 
+         cy.writeFile(logFile,  myApp + "\n" + myPage + " Page\n" + val)
+    })
+    
+    var n = 0
+    var hStr = " | App Version | Page | # | Axe Rule Id | Impact | Count | Description | Help | HelpURL \n" 
+    var bStr = ""
+    var lStr = ""
+    for (let key of Array.from(vio.keys())) {
+        var str = " | " + myApp +
+                  " | " + myPage + " Page " +
+                  " | " + (parseInt(key, 10)+1) + 
+                  " | " + vio[key].IssueType + 
+                  " | " + vio[key].Impact + 
+                  " | " + vio[key].Count + 
+                  " | " + vio[key].Description +
+                  " | " + vio[key].Help +
+                  " | " + vio[key].HelpUrl +
+                  "\n"
+        bStr += str
+        n += (parseInt(vio[key].Count, 10)) 
+    }
+    lStr = myPage + " Page has " + n + " violations"
+
+    var myStr = hStr + bStr + lStr + "\n\n"
+
+    //cy.task('log', myStr)
+  
+    cy.task('checkFileExists', summaryFile).then((exists) => {
+        if (exists) {
+            cy.writeFile( summaryFile, myStr, {flag:'a+'} )  
+            cy.task('log', "File exists")
+        } else {
+            cy.writeFile( summaryFile, myStr )
+            cy.task('log', "File does NOT exist")  
+        }
+    })
+
 
     if(!sReport)
         createHtmlReport({results:{violations:violations}})
@@ -45,7 +88,7 @@ Cypress.Commands.add('checkAccessbility',
 {
     prevSubject: 'optional'
 },
-(subject, bLocation, hLocation, tLocation, theApp, page, skipLog = false, skipReport = false, {skipFailures = false} = {}) =>{
+(subject, bLocation, hLocation, tLocation, theApp, page, summaryFileName, skipLog = false, skipReport = false, {skipFailures = false} = {}) =>{
 
         myApp = theApp
         myPage = page 
@@ -55,6 +98,7 @@ Cypress.Commands.add('checkAccessbility',
         baseLocation = bLocation
         htmlLocation = hLocation
         txtLocation = tLocation
+        sfName = summaryFileName
   
         cy.injectAxe() 
         cy.checkA11y(subject, {

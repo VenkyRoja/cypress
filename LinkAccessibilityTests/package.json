@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "cypress.config.js",
   "scripts": {
-    "pretest": "rimraf  --glob ./MyReports/mochawesome/*.*",
+    "pretest": "rimraf  --glob ./MyReports/mochawesome/*.*  && rimraf  --glob ./MyReports/AccessibilityHTML/*.*  && rimraf  --glob ./MyReports/AccessibilityTXT/*.* ",
     "test": "cypress run --browser firefox"
   },
   "author": "",

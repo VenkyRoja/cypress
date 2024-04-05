@@ -1,9 +1,6 @@
 Link 4.1.13
-Billing Page
-Fix all of the following:
-  aria-labelledby attribute cannot be used on a legend with no valid role attribute.Fix any of the following:
-  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
-  Some page content is not contained by landmarksFix any of the following:
+Start new service Page
+Fix any of the following:
   ARIA role listitem is not allowed for given elementFix any of the following:
   Element has children which are not allowed: section[aria-labelledby]
   Element uses aria-busy="true" while showing a loaderFix any of the following:

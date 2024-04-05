@@ -1,0 +1,8 @@
+ | App Version | Page | # | Axe Rule Id | Impact | Count | Description | Help | HelpURL 
+ | Link 4.1.13 | Start new service Page  | 1 | aria-allowed-role | minor | 18 | Ensures role attribute has an appropriate value for the element (aria-allowed-role) | ARIA role should be appropriate for the element | https://dequeuniversity.com/rules/axe/4.8/aria-allowed-role?application=axeAPI
+ | Link 4.1.13 | Start new service Page  | 2 | aria-required-children | critical | 1 | Ensures elements with an ARIA role that require child roles contain them (aria-required-children) | Certain ARIA roles must contain particular children | https://dequeuniversity.com/rules/axe/4.8/aria-required-children?application=axeAPI
+ | Link 4.1.13 | Start new service Page  | 3 | aria-required-parent | critical | 18 | Ensures elements with an ARIA role that require parent roles are contained by them (aria-required-parent) | Certain ARIA roles must be contained by particular parents | https://dequeuniversity.com/rules/axe/4.8/aria-required-parent?application=axeAPI
+ | Link 4.1.13 | Start new service Page  | 4 | frame-title | serious | 1 | Ensures <iframe> and <frame> elements have an accessible name (frame-title) | Frames must have an accessible name | https://dequeuniversity.com/rules/axe/4.8/frame-title?application=axeAPI
+ | Link 4.1.13 | Start new service Page  | 5 | landmark-unique | moderate | 1 | Landmarks should have a unique role or role/label/title (i.e. accessible name) combination (landmark-unique) | Ensures landmarks are unique | https://dequeuniversity.com/rules/axe/4.8/landmark-unique?application=axeAPI
+Start new service Page has 39 violations
+

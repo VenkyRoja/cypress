@@ -71,10 +71,10 @@ function printAccessibilityViolations(violations) {
     cy.task('checkFileExists', summaryFile).then((exists) => {
         if (exists) {
             cy.writeFile( summaryFile, myStr, {flag:'a+'} )  
-            cy.task('log', "File exists")
+            //cy.task('log', "File exists")
         } else {
             cy.writeFile( summaryFile, myStr )
-            cy.task('log', "File does NOT exist")  
+            //cy.task('log', "File does NOT exist")  
         }
     })
 

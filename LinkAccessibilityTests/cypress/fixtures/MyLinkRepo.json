@@ -1,8 +1,10 @@
 {
+    
     "LandingPage": {
         "NameInput": "dnn_dnnLogin_username",
         "PwdInput": "password1dnnLogin",
-        "LoginButton": "Login"
+        "LoginButton": "Login",
+        "RegisterNowButton": ".openaccount"
     },
 
     "AccountViewPage": {
@@ -11,14 +13,24 @@
         "MenuItemAlertSub": "Alert Subscription",
         "MenuItemAutoPay": "Auto Pay",
         "MenuItemManageAccount": "Manage Account",
-        "MenuItemSSTS": "Stop, start or transfer service"
+        "MenuItemSSTS": "Stop, start or transfer service",
+        "MenuItemMyProfile": "#menu-item-my-utility-my-profile > a > .menu-item-title",
+        "MenuItemMyPayBills": "#menu-item-my-utility-pay-bills > a > .menu-item-title",
+        "MenuItemMyPaymentArrangements": "#menu-item-my-utility-payment-arrangements > a > .menu-item-title",
+        "MenuItemMyReqServiceAppt": "#menu-item-my-utility-request-service-appointment > a > .menu-item-title",
+        "MenuItemMySO": "#menu-item-my-utility-service-orders > a > .menu-item-title",
+        "MenuItemMyMeterReading": "#menu-item-my-utility-submit-meter-reading > a > .menu-item-title",
+        "MenuItemTransactions": "#menu-item-my-utility-transactions > a > .menu-item-title",
+        "MenuItemUsage": "#menu-item-my-utility-usage > a > .menu-item-title"
     },
     "ServicesPage": {
         "NewServiceRbuttonID": "#rdMoveIn",   
         "TransferServiceRbuttonID": "#rdTransferService",
         "StopServiceRbuttonID" : "#rdMoveOut",
         "ContinueButtonID": "#btnTransferServiceSubmit"
-        
+    },
+    "MyProfilePage": {
+        "BillingAddressID": "#addressHeader495 > .dnnLabelExpanded"   
     }
 
 }

@@ -1,10 +1,11 @@
 Link 4.1.13
-Start new service Page
+Usage Page
 Fix any of the following:
   ARIA role listitem is not allowed for given elementFix any of the following:
   Element has children which are not allowed: section[aria-labelledby]
   Element uses aria-busy="true" while showing a loaderFix any of the following:
   Required ARIA parent role not present: listFix any of the following:
+  Element does not have text that is visible to screen readersFix any of the following:
   Element has no title attribute
   aria-label attribute does not exist or is empty
   aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty

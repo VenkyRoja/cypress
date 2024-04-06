@@ -45,6 +45,7 @@ function printAccessibilityViolations(violations) {
     })
     
     var n = 0
+    var pStr = ""
     var hStr = " | App Version | Page | # | Axe Rule Id | Impact | Count | Description | Help | HelpURL \n" 
     var bStr = ""
     var lStr = ""
@@ -63,8 +64,9 @@ function printAccessibilityViolations(violations) {
         n += (parseInt(vio[key].Count, 10)) 
     }
     lStr = myPage + " Page has " + n + " violations"
+    pStr = "------------- " + myPage + " -------------\n"
 
-    var myStr = hStr + bStr + lStr + "\n\n"
+    var myStr = pStr + hStr + bStr + lStr + "\n\n"
 
     //cy.task('log', myStr)
   

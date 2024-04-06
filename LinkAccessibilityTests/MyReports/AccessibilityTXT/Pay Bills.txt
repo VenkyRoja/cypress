@@ -1,0 +1,317 @@
+Link 4.1.13
+Pay Bills Page
+Fix all of the following:
+  aria-labelledby attribute cannot be used on a legend with no valid role attribute.Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix all of the following:
+  Element is in tab order and does not have accessible text
+
+Fix any of the following:
+  Element does not have text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attributeFix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix all of the following:
+  aria-labelledby attribute cannot be used on a legend with no valid role attribute.Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
+  Some page content is not contained by landmarksFix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix all of the following:
+  aria-labelledby attribute cannot be used on a legend with no valid role attribute.Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
+  ARIA role listitem is not allowed for given elementFix all of the following:
+  aria-labelledby attribute cannot be used on a section with no valid role attribute.Fix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix all of the following:
+  Element is in tab order and does not have accessible text
+
+Fix any of the following:
+  Element does not have text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attributeFix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element does not have text that is visible to screen readersFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix all of the following:
+  aria-labelledby attribute cannot be used on a legend with no valid role attribute.Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
+  Some page content is not contained by landmarksFix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
+  ARIA role listitem is not allowed for given elementFix all of the following:
+  aria-labelledby attribute cannot be used on a legend with no valid role attribute.Fix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix all of the following:
+  aria-labelledby attribute cannot be used on a legend with no valid role attribute.Fix any of the following:
+  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishableFix any of the following:
+  ARIA role listitem is not allowed for given elementFix any of the following:
+  Element has children which are not allowed: section[aria-labelledby]
+  Element uses aria-busy="true" while showing a loaderFix any of the following:
+  Required ARIA parent role not present: listFix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role="none" or role="presentation"

@@ -131,7 +131,7 @@ describe('Link Application Accessbility Check', () =>  {
   })
 
 
-  it.only("18 Usage Page: Test accessbility ", function()  {
+  it("18 Usage Page: Test accessbility ", function()  {
     cy.Link_login()
     cy.get(this.repo.AccountViewPage.MenuItemUsage).click()
     cy.checkAccessbility(this.c.Reports.myBase, this.c.Reports.myHTML, this.c.Reports.myTXT, this.c.MyApp, this.c.Pages.P18, this.c.Reports.summaryFile)

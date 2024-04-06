@@ -279,3 +279,19 @@ Usage Page has 39 violations
  | Link 4.1.13 | Transactions Page  | 5 | landmark-unique | moderate | 1 | Landmarks should have a unique role or role/label/title (i.e. accessible name) combination (landmark-unique) | Ensures landmarks are unique | https://dequeuniversity.com/rules/axe/4.8/landmark-unique?application=axeAPI
 Transactions Page has 39 violations
 
+------------- Usage -------------
+ | App Version | Page | # | Axe Rule Id | Impact | Count | Description | Help | HelpURL 
+ | Link 4.1.13 | Usage Page  | 1 | aria-allowed-role | minor | 18 | Ensures role attribute has an appropriate value for the element (aria-allowed-role) | ARIA role should be appropriate for the element | https://dequeuniversity.com/rules/axe/4.8/aria-allowed-role?application=axeAPI
+ | Link 4.1.13 | Usage Page  | 2 | aria-required-children | critical | 1 | Ensures elements with an ARIA role that require child roles contain them (aria-required-children) | Certain ARIA roles must contain particular children | https://dequeuniversity.com/rules/axe/4.8/aria-required-children?application=axeAPI
+ | Link 4.1.13 | Usage Page  | 3 | aria-required-parent | critical | 18 | Ensures elements with an ARIA role that require parent roles are contained by them (aria-required-parent) | Certain ARIA roles must be contained by particular parents | https://dequeuniversity.com/rules/axe/4.8/aria-required-parent?application=axeAPI
+ | Link 4.1.13 | Usage Page  | 4 | frame-title | serious | 1 | Ensures <iframe> and <frame> elements have an accessible name (frame-title) | Frames must have an accessible name | https://dequeuniversity.com/rules/axe/4.8/frame-title?application=axeAPI
+ | Link 4.1.13 | Usage Page  | 5 | landmark-unique | moderate | 1 | Landmarks should have a unique role or role/label/title (i.e. accessible name) combination (landmark-unique) | Ensures landmarks are unique | https://dequeuniversity.com/rules/axe/4.8/landmark-unique?application=axeAPI
+Usage Page has 39 violations
+
+------------- Account Overview -------------
+ | App Version | Page | # | Axe Rule Id | Impact | Count | Description | Help | HelpURL 
+ | Link 4.1.13 | Account Overview Page  | 1 | aria-prohibited-attr | serious | 1 | Ensures ARIA attributes are not prohibited for an element's role (aria-prohibited-attr) | Elements must only use permitted ARIA attributes | https://dequeuniversity.com/rules/axe/4.8/aria-prohibited-attr?application=axeAPI
+ | Link 4.1.13 | Account Overview Page  | 2 | landmark-unique | moderate | 1 | Landmarks should have a unique role or role/label/title (i.e. accessible name) combination (landmark-unique) | Ensures landmarks are unique | https://dequeuniversity.com/rules/axe/4.8/landmark-unique?application=axeAPI
+ | Link 4.1.13 | Account Overview Page  | 3 | region | moderate | 3 | Ensures all page content is contained by landmarks (region) | All page content should be contained by landmarks | https://dequeuniversity.com/rules/axe/4.8/region?application=axeAPI
+Account Overview Page has 5 violations
+

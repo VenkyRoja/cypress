@@ -134,6 +134,9 @@ function createHtmlReport({ results }) {
 
 
 
+
+
+
 //--- This for tutorial examples--------------------start-------------
 Cypress.Commands.add('getText', {prevSubject: 'element'}, ($element) => {
   cy.wrap($element).scrollIntoView()

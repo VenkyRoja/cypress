@@ -197,7 +197,8 @@
     "merge-reports": "mochawesome-merge cypress/reports/*.json -o cypress/reports/result.json",
     "generate-html-report": "marge cypress/reports/result.json --reportDir ./ --inline",
     "myLink": "npx cypress run --spec cypress/e2e/MyLink/LinkAppAccessibilityCheck.cy.ts --browser chrome  --headless",
-    "myWork": "npx cypress run --spec cypress/e2e/Mywork/reader.cy.ts --browser chrome  --headless"
+    "myWork": "npx cypress run --spec cypress/e2e/Mywork/reader.cy.ts --browser chrome  --headless",
+    "myExcel": "npx cypress run --spec cypress/e2e/Mywork/myExcel.cy.js --browser chrome  --headless"
   },
   "keywords": [],
   "author": "",

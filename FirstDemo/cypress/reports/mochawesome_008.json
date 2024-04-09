@@ -1,0 +1,130 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-04-08T20:18:32.400Z",
+    "end": "2024-04-08T20:18:32.838Z",
+    "duration": 438,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f1c1a51e-5853-46e6-9614-711a4ab23027",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Mywork\\myExcel.cy.js",
+      "file": "cypress\\e2e\\Mywork\\myExcel.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b7c3ea5d-0eb1-47a9-8230-1655a35b9088",
+          "title": "Reading fron and Writing to Excel file ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "01 should read from an Excel file",
+              "fullTitle": "Reading fron and Writing to Excel file  01 should read from an Excel file",
+              "timedOut": null,
+              "duration": 81,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.task('ReadExcel', {\n  file: 'MyWork/sheet.xlsx',\n  sheetname: 'Sheet1'\n}).then(rows => {\n  cy.task('log', 'rows = ' + rows.length);\n  cy.writeFile('MyWork/sheet.json', {\n    rows\n  });\n});",
+              "err": {},
+              "uuid": "17733219-ae6c-4c4a-97c6-2af2faddbd96",
+              "parentUUID": "b7c3ea5d-0eb1-47a9-8230-1655a35b9088",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "02 should write to Excel file",
+              "fullTitle": "Reading fron and Writing to Excel file  02 should write to Excel file",
+              "timedOut": null,
+              "duration": 261,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "data = [{\n  firstName: 'John',\n  lastName: 'Doe'\n}, {\n  firstName: 'Smith',\n  lastName: 'Peters'\n}, {\n  firstName: 'Alice',\n  lastName: 'Lee'\n}];\ncy.task('WriteExcel', {\n  jsonData: data,\n  sheetname: 'Responses',\n  filepath: 'MyWork/sampleData.xlsx'\n});",
+              "err": {
+                "message": "ReferenceError: data is not defined",
+                "estack": "ReferenceError: data is not defined\n    at Context.eval (webpack://mycypress/./cypress/e2e/Mywork/myExcel.cy.js:15:12)",
+                "diff": null
+              },
+              "uuid": "bc0a33e1-d865-4a3f-be74-5cc6b0998469",
+              "parentUUID": "b7c3ea5d-0eb1-47a9-8230-1655a35b9088",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "17733219-ae6c-4c4a-97c6-2af2faddbd96"
+          ],
+          "failures": [
+            "bc0a33e1-d865-4a3f-be74-5cc6b0998469"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 342,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

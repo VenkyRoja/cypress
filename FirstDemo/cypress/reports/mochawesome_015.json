@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-04-08T21:29:47.512Z",
+    "end": "2024-04-08T21:29:47.714Z",
+    "duration": 202,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f516e217-f795-49a0-a23c-ee8fcc581b83",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Mywork\\myExcel.cy.js",
+      "file": "cypress\\e2e\\Mywork\\myExcel.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8cc2077d-83b5-48d9-a3f2-5f930ddb6ee3",
+          "title": "Reading from and Writing to Excel file ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "02 should write to Excel file",
+              "fullTitle": "Reading from and Writing to Excel file  02 should write to Excel file",
+              "timedOut": null,
+              "duration": 138,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var data = [{\n  firstName: 'John',\n  lastName: 'Doe'\n}, {\n  firstName: 'Smith',\n  lastName: 'Peters'\n}, {\n  firstName: 'Alice',\n  lastName: 'Lee'\n}];\nvar str = cy.task('WriteExcel', {\n  jsonData: data,\n  sheetname: 'Responses',\n  filepath: 'MyWork/sampleData.xlsx'\n});\nconsole.log(str);",
+              "err": {},
+              "uuid": "425774df-b09d-44c2-8308-d0d48a4d1b99",
+              "parentUUID": "8cc2077d-83b5-48d9-a3f2-5f930ddb6ee3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "425774df-b09d-44c2-8308-d0d48a4d1b99"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 138,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

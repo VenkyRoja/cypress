@@ -1,6 +1,7 @@
 const { defineConfig } = require("cypress");
 
-const xlsx = require("node-xlsx").default;
+//const xlsx = require("node-xlsx").default;
+const xlsx = require('xlsx');
 const fs = require("fs");
 const path = require("path");
 const readXlsx = require("./read-xlsx")
@@ -44,8 +45,12 @@ module.exports = defineConfig({
       //---------3 readXlsx---------------
       on('task', { 
         'ReadExcel':  readXlsx.read  
-     })
+      })
 
+      //---------4 writeXlsx---------------
+      on('task', { 
+        'WriteExcel':  readXlsx.write  
+      })
       //---------------------------
     },
   },

@@ -1,5 +1,10 @@
-/// <reference types="xpath_cypress" />
+/*
+Install cypress-xpath before applying this program.
+Use below command to install cypress-xpath.
+npm install -D cypress-xpath
+*/
 
+require('cypress-xpath')
 describe('Cypress XPath demo', () => {
    
     it('should verify xpath capabilities',  () => {
